@@ -17,11 +17,11 @@ radio.onReceivedNumber(function (receivedNumber) {
         Jia_Close()
         basic.pause(100)
     } else if (receivedNumber == 5) {
-        basic.pause(100)
         Hua_Open()
+        basic.pause(200)
     } else if (receivedNumber == 6) {
-        basic.pause(100)
         Hua_Close()
+        basic.pause(200)
     } else {
         STOP()
     }
