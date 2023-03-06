@@ -54,9 +54,9 @@ function L開2 () {
     )
     sensors.DDMmotor(
     AnalogPin.P15,
-    0,
+    1,
     AnalogPin.P16,
-    100
+    200
     )
 }
 function Al_STOP () {
@@ -90,9 +90,9 @@ function 平穩1 () {
     )
     sensors.DDMmotor(
     AnalogPin.P15,
-    1,
+    0,
     AnalogPin.P16,
-    100
+    200
     )
 }
 Al_STOP()
