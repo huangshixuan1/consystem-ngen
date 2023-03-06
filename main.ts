@@ -15,9 +15,9 @@ function L開2 () {
 }
 function 平穩1 () {
     sensors.DDMmotor(
-    AnalogPin.P15,
+    AnalogPin.P13,
     0,
-    AnalogPin.P16,
+    AnalogPin.P14,
     200
     )
 }
