@@ -1,5 +1,5 @@
 function Hua_Close () {
-    pins.servoWritePin(AnalogPin.P1, 0)
+    pins.servoWritePin(AnalogPin.P8, 0)
 }
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
@@ -59,7 +59,7 @@ function 平穩1 () {
     )
 }
 function Hua_Open () {
-    pins.servoWritePin(AnalogPin.P1, 180)
+    pins.servoWritePin(AnalogPin.P8, 180)
 }
 STOP()
 radio.setGroup(174)
