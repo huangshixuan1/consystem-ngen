@@ -7,23 +7,21 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 function L開2 () {
     sensors.DDMmotor(
-    AnalogPin.P0,
+    AnalogPin.P13,
     1,
-    AnalogPin.P0,
-    0
+    AnalogPin.P14,
+    200
     )
 }
 function 平穩1 () {
     sensors.DDMmotor(
-    AnalogPin.P0,
+    AnalogPin.P15,
     0,
-    AnalogPin.P0,
-    0
+    AnalogPin.P16,
+    200
     )
 }
 radio.setGroup(174)
 basic.forever(function () {
-    if (true) {
-    	
-    }
+	
 })
