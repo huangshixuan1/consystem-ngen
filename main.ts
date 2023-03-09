@@ -22,8 +22,12 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.pause(200)
         伺服馬達全部停止()
     } else if (receivedNumber == 7) {
-    	
+        軌道上升()
     } else if (receivedNumber == 8) {
+        軌道下降()
+    } else if (receivedNumber == 9) {
+    	
+    } else if (receivedNumber == 10) {
     	
     } else {
         讓左右跑的那個夾子軌道停止()
@@ -34,6 +38,10 @@ function 整個軌道旋轉逆時鐘 () {
 }
 function 整個軌道旋轉順時鐘 () {
     pins.servoWritePin(AnalogPin.P8, 0)
+}
+function 軌道上升 () {
+    pins.servoWritePin(AnalogPin.P2, 180)
+    pins.servoWritePin(AnalogPin.P12, 0)
 }
 function 讓左右跑的夾子的軌道出門 () {
     sensors.DDMmotor(
@@ -48,6 +56,10 @@ function 讓左右跑的夾子的軌道出門 () {
     AnalogPin.P16,
     200
     )
+}
+function 軌道下降 () {
+    pins.servoWritePin(AnalogPin.P2, 0)
+    pins.servoWritePin(AnalogPin.P12, 180)
 }
 function 伺服馬達P1夾子開 () {
     pins.servoWritePin(AnalogPin.P1, 180)
