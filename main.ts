@@ -45,7 +45,7 @@ function 整個軌道旋轉順時鐘 () {
 }
 function 軌道上升 () {
     pins.servoWritePin(AnalogPin.P2, 180)
-    pins.servoWritePin(AnalogPin.P12, 0)
+    pins.servoWritePin(AnalogPin.P12, 180)
 }
 function 讓左右跑的夾子的軌道出門 () {
     sensors.DDMmotor(
@@ -63,7 +63,7 @@ function 讓左右跑的夾子的軌道出門 () {
 }
 function 軌道下降 () {
     pins.servoWritePin(AnalogPin.P2, 0)
-    pins.servoWritePin(AnalogPin.P12, 180)
+    pins.servoWritePin(AnalogPin.P12, 0)
 }
 function 伺服馬達P1夾子開 () {
     pins.servoWritePin(AnalogPin.P1, 180)
