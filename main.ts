@@ -23,8 +23,12 @@ radio.onReceivedNumber(function (receivedNumber) {
         伺服馬達全部停止()
     } else if (receivedNumber == 7) {
         軌道上升()
+        basic.pause(50)
+        伺服馬達全部停止()
     } else if (receivedNumber == 8) {
         軌道下降()
+        basic.pause(50)
+        伺服馬達全部停止()
     } else if (receivedNumber == 9) {
     	
     } else if (receivedNumber == 10) {
@@ -98,6 +102,8 @@ function 伺服馬達P1夾子關 () {
 function 伺服馬達全部停止 () {
     pins.servoWritePin(AnalogPin.P1, 0)
     pins.servoWritePin(AnalogPin.P8, 90)
+    pins.servoWritePin(AnalogPin.P2, 90)
+    pins.servoWritePin(AnalogPin.P12, 90)
 }
 讓左右跑的那個夾子軌道停止()
 radio.setGroup(174)
